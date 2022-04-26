@@ -37,12 +37,7 @@ fragment VariantFragment on ProductVariant {
     referenceValue
   }
   sellingPlanAllocations(first: 20) {
-    pageInfo {
-      hasNextPage
-      hasPreviousPage
-    }
     edges {
-      cursor
       node {
         sellingPlan {
           id
