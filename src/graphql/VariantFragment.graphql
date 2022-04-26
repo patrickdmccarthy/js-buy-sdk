@@ -36,4 +36,28 @@ fragment VariantFragment on ProductVariant {
     referenceUnit
     referenceValue
   }
+  sellingPlanAllocations(first: 20) {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+    edges {
+      cursor
+      node {
+        sellingPlan {
+          id
+          name
+          options {
+            name
+            value
+          }
+          description
+          recurringDeliveries
+          priceAdjustments {
+            orderCount
+          }
+        }
+      }
+    }
+  }
 }
