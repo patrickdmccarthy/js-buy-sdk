@@ -2466,6 +2466,34 @@ function query(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.ProductFragment = document.defineFragment("ProductFragment", "Product", function (root) {
     root.add("id");
@@ -2580,6 +2608,34 @@ function query$1(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.ProductFragment = document.defineFragment("ProductFragment", "Product", function (root) {
@@ -2698,6 +2754,34 @@ function query$2(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.ProductFragment = document.defineFragment("ProductFragment", "Product", function (root) {
@@ -2825,6 +2909,34 @@ function query$3(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.ProductFragment = document.defineFragment("ProductFragment", "Product", function (root) {
@@ -3109,6 +3221,34 @@ function query$5(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.CollectionFragment = document.defineFragment("CollectionFragment", "Collection", function (root) {
     root.add("id");
@@ -3309,6 +3449,34 @@ function query$7(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.CollectionFragment = document.defineFragment("CollectionFragment", "Collection", function (root) {
     root.add("id");
@@ -3466,6 +3634,34 @@ function query$8(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.ProductFragment = document.defineFragment("ProductFragment", "Product", function (root) {
@@ -3907,6 +4103,34 @@ function query$11(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
     root.add("targetSelection");
@@ -4205,6 +4429,34 @@ function query$12(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
@@ -4522,6 +4774,34 @@ function query$13(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
@@ -4841,6 +5121,34 @@ function query$14(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
     root.add("targetSelection");
@@ -5159,6 +5467,34 @@ function query$15(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
     root.add("targetSelection");
@@ -5469,6 +5805,34 @@ function query$16(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
@@ -5788,6 +6152,34 @@ function query$17(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
     root.add("targetSelection");
@@ -6106,6 +6498,34 @@ function query$18(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
     root.add("targetSelection");
@@ -6423,6 +6843,34 @@ function query$19(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
     root.add("targetSelection");
@@ -6739,6 +7187,34 @@ function query$20(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
@@ -7058,6 +7534,34 @@ function query$21(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
     root.add("targetSelection");
@@ -7376,6 +7880,34 @@ function query$22(client) {
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
     });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
+    });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
     root.add("targetSelection");
@@ -7693,6 +8225,34 @@ function query$23(client) {
       unitPriceMeasurement.add("quantityValue");
       unitPriceMeasurement.add("referenceUnit");
       unitPriceMeasurement.add("referenceValue");
+    });
+    root.add("sellingPlanAllocations", {
+      args: {
+        first: 20
+      }
+    }, function (sellingPlanAllocations) {
+      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
+        pageInfo.add("hasNextPage");
+        pageInfo.add("hasPreviousPage");
+      });
+      sellingPlanAllocations.add("edges", function (edges) {
+        edges.add("cursor");
+        edges.add("node", function (node) {
+          node.add("sellingPlan", function (sellingPlan) {
+            sellingPlan.add("id");
+            sellingPlan.add("name");
+            sellingPlan.add("options", function (options) {
+              options.add("name");
+              options.add("value");
+            });
+            sellingPlan.add("description");
+            sellingPlan.add("recurringDeliveries");
+            sellingPlan.add("priceAdjustments", function (priceAdjustments) {
+              priceAdjustments.add("orderCount");
+            });
+          });
+        });
+      });
     });
   });
   spreads.DiscountApplicationFragment = document.defineFragment("DiscountApplicationFragment", "DiscountApplication", function (root) {
@@ -9054,6 +9614,7 @@ var ProductVariant = {
     "priceV2": "MoneyV2",
     "product": "Product",
     "selectedOptions": "SelectedOption",
+    "sellingPlanAllocations": "SellingPlanAllocationConnection",
     "sku": "String",
     "title": "String",
     "unitPrice": "MoneyV2",
@@ -9113,6 +9674,68 @@ var SelectedOption = {
   "fieldBaseTypes": {
     "name": "String",
     "value": "String"
+  },
+  "implementsNode": false
+};
+
+var SellingPlan = {
+  "name": "SellingPlan",
+  "kind": "OBJECT",
+  "fieldBaseTypes": {
+    "description": "String",
+    "id": "ID",
+    "name": "String",
+    "options": "SellingPlanOption",
+    "priceAdjustments": "SellingPlanPriceAdjustment",
+    "recurringDeliveries": "Boolean"
+  },
+  "implementsNode": false
+};
+
+var SellingPlanAllocation = {
+  "name": "SellingPlanAllocation",
+  "kind": "OBJECT",
+  "fieldBaseTypes": {
+    "sellingPlan": "SellingPlan"
+  },
+  "implementsNode": false
+};
+
+var SellingPlanAllocationConnection = {
+  "name": "SellingPlanAllocationConnection",
+  "kind": "OBJECT",
+  "fieldBaseTypes": {
+    "edges": "SellingPlanAllocationEdge",
+    "pageInfo": "PageInfo"
+  },
+  "implementsNode": false
+};
+
+var SellingPlanAllocationEdge = {
+  "name": "SellingPlanAllocationEdge",
+  "kind": "OBJECT",
+  "fieldBaseTypes": {
+    "cursor": "String",
+    "node": "SellingPlanAllocation"
+  },
+  "implementsNode": false
+};
+
+var SellingPlanOption = {
+  "name": "SellingPlanOption",
+  "kind": "OBJECT",
+  "fieldBaseTypes": {
+    "name": "String",
+    "value": "String"
+  },
+  "implementsNode": false
+};
+
+var SellingPlanPriceAdjustment = {
+  "name": "SellingPlanPriceAdjustment",
+  "kind": "OBJECT",
+  "fieldBaseTypes": {
+    "orderCount": "Int"
   },
   "implementsNode": false
 };
@@ -9272,6 +9895,12 @@ Types.types["ProductVariantEdge"] = ProductVariantEdge;
 Types.types["QueryRoot"] = QueryRoot;
 Types.types["ScriptDiscountApplication"] = ScriptDiscountApplication;
 Types.types["SelectedOption"] = SelectedOption;
+Types.types["SellingPlan"] = SellingPlan;
+Types.types["SellingPlanAllocation"] = SellingPlanAllocation;
+Types.types["SellingPlanAllocationConnection"] = SellingPlanAllocationConnection;
+Types.types["SellingPlanAllocationEdge"] = SellingPlanAllocationEdge;
+Types.types["SellingPlanOption"] = SellingPlanOption;
+Types.types["SellingPlanPriceAdjustment"] = SellingPlanPriceAdjustment;
 Types.types["ShippingRate"] = ShippingRate;
 Types.types["Shop"] = Shop;
 Types.types["ShopPolicy"] = ShopPolicy;
