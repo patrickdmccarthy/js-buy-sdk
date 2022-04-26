@@ -2475,12 +2475,7 @@ function query(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -2618,12 +2613,7 @@ function query$1(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -2764,12 +2754,7 @@ function query$2(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -2919,12 +2904,7 @@ function query$3(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -3230,12 +3210,7 @@ function query$5(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -3458,12 +3433,7 @@ function query$7(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -3644,12 +3614,7 @@ function query$8(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -4112,12 +4077,7 @@ function query$11(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -4439,12 +4399,7 @@ function query$12(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -4784,12 +4739,7 @@ function query$13(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -5130,12 +5080,7 @@ function query$14(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -5476,12 +5421,7 @@ function query$15(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -5815,12 +5755,7 @@ function query$16(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -6161,12 +6096,7 @@ function query$17(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -6507,12 +6437,7 @@ function query$18(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -6852,12 +6777,7 @@ function query$19(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -7197,12 +7117,7 @@ function query$20(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -7543,12 +7458,7 @@ function query$21(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -7889,12 +7799,7 @@ function query$22(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
@@ -8235,12 +8140,7 @@ function query$23(client) {
         first: 20
       }
     }, function (sellingPlanAllocations) {
-      sellingPlanAllocations.add("pageInfo", function (pageInfo) {
-        pageInfo.add("hasNextPage");
-        pageInfo.add("hasPreviousPage");
-      });
       sellingPlanAllocations.add("edges", function (edges) {
-        edges.add("cursor");
         edges.add("node", function (node) {
           node.add("sellingPlan", function (sellingPlan) {
             sellingPlan.add("id");
